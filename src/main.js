@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+import store from './components/store/index.js'
+const app=createApp(App)
+app.use(store)
+app.mount('#app')
